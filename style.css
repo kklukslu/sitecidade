@@ -1,0 +1,176 @@
+
+body {
+    margin: 0;
+    background-color: #eef6f4;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #176b63;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+#titulo {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    gap: 20px;
+}
+
+article {
+    width: 70%;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #c5d8d5;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #176b63;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+aside {
+    position: fixed;
+    top: 150px;
+    right: 20px;
+    width: 230px;
+    background-color: #d8ece8;
+    padding: 15px;
+    border: 1px solid #a9c8c3;
+    border-radius: 5px;
+}
+
+.importante {
+    color: #176b63;
+    font-weight: bold;
+    background-color: #b9dcd5;
+    padding: 8px;
+}
+
+.destaque {
+    border: 1px solid #176b63;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+input {
+    padding: 9px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+}
+
+input[type="email"] {
+    border: 1px solid #176b63;
+}
+
+button {
+    background-color: #176b63;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0d4d47;
+}
+
+footer {
+    background-color: #0d4d47;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: white;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.galeria img {
+    flex-basis: 270px;
+    width: 270px;
+    height: 270px;
+    object-fit: cover;
+    border: 3px solid #176b63;
+    border-radius: 5px;
+}
+
+.galeria img:hover {
+    opacity: 0.7;
+}
+
+@media (max-width: 700px) {
+
+    main {
+        width: 90%;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    aside {
+        position: static;
+        width: auto;
+        margin-bottom: 20px;
+    }
+
+    .galeria img {
+        flex-basis: 140px;
+        width: 140px;
+        height: 140px;
+    }
+}
